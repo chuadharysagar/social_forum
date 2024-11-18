@@ -1,7 +1,8 @@
 import React from 'react'
-import LeftSidebar from '../../components/LeftSidebar'
-import PostCard from '../../components/PostCard'
-import { postData } from '../../assets/assets'
+import LeftSidebar from '../components/LeftSidebar'
+import PostCard from '../components/PostCard'
+import { postData } from '../assets/assets'
+import RightSidebar from '../components/RightSidebar'
 
 const Home = () => {
    return (
@@ -16,13 +17,15 @@ const Home = () => {
          {/* MIDDLE POST AREA  */}
          <div className='bg-yellow-100 w-3/5 h-full p-20 overflow-scroll scrollbar-hide flex flex-col gap-8'>
             {postData.map((item, index) => (
-               <PostCard title={item.title} tags={item.tags} img={item.img} initialLikes = {item.like}/>
+               <PostCard title={item.title} tags={item.tags} img={item.img} initialLikes={item.like} />
             ))}
          </div>
 
 
          {/* RIGHT SIDE BAR  */}
-         <div className='bg-white w-2/5 h-full'>right</div>
+         <div className='bg-white w-2/5 h-full'>
+            <RightSidebar />
+         </div>
       </div>
    )
 }

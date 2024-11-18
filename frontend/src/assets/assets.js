@@ -11,6 +11,8 @@ import post2 from './post2.jpeg'
 import post3 from './post3.jpeg'
 import like from './like.svg'
 import liked from './liked.svg'
+import edit from './edit.svg'
+import posts from './posts.svg'
 
 
 
@@ -22,6 +24,8 @@ export const assets = {
   save,
   liked,
   saved,
+  edit,
+  posts,
 }
 
 
@@ -31,33 +35,41 @@ export const menuData =[
     label:"Home",
     img:home,
     altText:"Home Image",
+    path:"/home",
   },
   {
     label:"Explore",
     img:explore,
     altText:"Explore Image",
+    path:"/",
+
   },
   {
     label:"People",
     img:people,
     altText:"People Image",
+    path:"/",
+
   },
   {
     label:"Saved",
     img:saved,
     altText:"Saved Image",
+    path:"/",
+
   },
   {
     label:"Create post",
     img:addPost,
     altText:"create psot Image",
+    path:"/",
   }
 ]
 
 
 export const postData = [
   {
-    title: "Somting beatufull nnatural love",
+    title: "Somting beatufull natural love",
     tags: ['Amazing', 'cill', 'vibe'],
     img: post1,
     like: 20
@@ -85,5 +97,34 @@ export const postData = [
     tags: ['Forest', 'Green', 'Relax'],
     img: post2,
     like: 28
+  }
+];
+
+
+export const topCreaterData = [
+  {
+    profileImg: "profile1.png",
+    Name: "Santosh",
+    userName: "@santosh"
+  },
+  {
+    profileImg: "profile2.png",
+    Name: "Anita",
+    userName: "@anita"
+  },
+  {
+    profileImg: "profile3.png",
+    Name: "Ravi",
+    userName: "@ravi"
+  },
+  {
+    profileImg: "profile4.png",
+    Name: "Priya",
+    userName: "@priya"
+  },
+  {
+    profileImg: "profile5.png",
+    Name: "Karan",
+    userName: "@karan"
   }
 ];
