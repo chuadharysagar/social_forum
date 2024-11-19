@@ -28,8 +28,8 @@ const LeftSidebar = () => {
                <img src={assets.profile} alt="profile picture" height={60} width={60} />
             </div>
             <div className='flex flex-col items-center justify-center'>
-               <h1 className='text-xl font-bold'>Faltu</h1>
-               <p className='text-sm text-gray-600 font-semibold'>@faltu Insaan</p>
+               <h1 className='text-xl font-bold'>Sagar</h1>
+               <p className='text-sm text-gray-600 font-semibold'>@Sagar</p>
             </div>
          </div>
 
